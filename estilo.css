@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./imagenes/coffee.png);
+  background-attachment: fixed;
+  background-position: 1%;
+}
+
+/* inicio del header */
+header {
+  display: flex;
+  justify-content: space-between;
+  margin: 1%;
+  text-shadow: 8px 4px 4px #000;
+}
+
+header .logo {
+  width: 100px;
+  display: flex;
+}
+
+header .logo {
+  margin: auto 5px;
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+header nav {
+  margin: 2px;
+  padding: auto;
+}
+
+header nav ul {
+  margin: 10px;
+  padding: 15px;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 1rem;
+  padding: 1rem;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 19px;
+}
+
+header nav ul li a:hover 
+{
+  background: #000;
+  color: #fff;
+  padding: 12px 12px 12px;
+  text-shadow: none;
+  transition: 1s;
+  border-radius: 10%;
+}
+/* inicio del main */
+
+main
+{
+ display: flex;
+ justify-content: center;  
+}
+
+main .tittle
+{
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 5px 10px 6px #000;
+    margin-top: 10%;
+    margin-left: -75%;
+}
+
+main .tittle .centro
+{
+    text-decoration: none;
+    color: #fff;    
+    margin-left: 35%;
+    
+}
+
+main .tittle .centro:hover{
+    background-color: #fff;
+    border-radius: 5%;
+    transition: 1s;
+    color: #000;
+    text-shadow: none;
+
+}
+
+
+@media screen and (max-width:700px) {
+  header, nav,ul,li,a{
+    float:none;
+    width:96%;
+  }
+  nav {
+    font-size:1.2em;
+  }
+  aside {
+    margin-top:5px;
+  }
+  nav ul {
+    float:none;
+    clear:both;
+  }
+}
+
+/* para 480px o menos */
+@media screen and (max-width:480px) {
+  form,.formulario {
+    display:none;
+  }
+  label,input,button,span {
+    font-size:1.5em;
+  }
+  span,button {
+    width:94%;
+  }
+  form {
+    float:left;
+    clear:none;
+    width:50%;
+  }
+  nav ul li {
+    float:none;
+  }
+}
